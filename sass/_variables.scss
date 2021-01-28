@@ -1,0 +1,34 @@
+//FONTS
+@font-face {
+    font-family: 'klavika';
+    src: url('../assets/font/klavika-bold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'klavika';
+    src: url('../assets/font/klavika-light-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'klavika';
+    src: url('../assets/font/klavika-medium-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: 'klavika';
+    src: url('../assets/font/klavika-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: regular;
+}
+
+//mediaQueries
+$competitive-sm: 576px; // Breakpoint for smartphone
+$competitive-md: 768px; // Breakpoint for tablet portrait
+$competitive-lg: 992px; // Breakpoint for tablet landscape
+$competitive-el: 1025px; // Breakpoint for desktop

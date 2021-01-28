@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'klavika';
+  src: url("../assets/font/klavika-bold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: bold; }
+@font-face {
+  font-family: 'klavika';
+  src: url("../assets/font/klavika-light-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: light; }
+@font-face {
+  font-family: 'klavika';
+  src: url("../assets/font/klavika-medium-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: medium; }
+@font-face {
+  font-family: 'klavika';
+  src: url("../assets/font/klavika-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: regular; }
+.wrapper-contain {
+  background-color: #000;
+  font-family: "klavika";
+  margin: 0; }
+  .wrapper-contain .page {
+    display: none;
+    padding: 0; }
+    .wrapper-contain .page .wrapper-bg {
+      height: 100vh;
+      width: 100%; }
+      .wrapper-contain .page .wrapper-bg.pos-1 .bg-img {
+        background-position: 20.5% 0; }
+        @media all and (min-width: 768px) {
+          .wrapper-contain .page .wrapper-bg.pos-1 .bg-img {
+            background-position: 12.5% 0; } }
+      .wrapper-contain .page .wrapper-bg.pos-2 .bg-img {
+        background-position: 27% 0; }
+        @media all and (min-width: 768px) {
+          .wrapper-contain .page .wrapper-bg.pos-2 .bg-img {
+            background-position: 25% 0; } }
+      .wrapper-contain .page .wrapper-bg.pos-3 .bg-img {
+        background-position: 34.5% 0; }
+        @media all and (min-width: 768px) {
+          .wrapper-contain .page .wrapper-bg.pos-3 .bg-img {
+            background-position: 37.5% 0; } }
+      .wrapper-contain .page .wrapper-bg.pos-4 .bg-img {
+        background-position: 48% 0; }
+        @media all and (min-width: 768px) {
+          .wrapper-contain .page .wrapper-bg.pos-4 .bg-img {
+            background-position: 50% 0; } }
+      .wrapper-contain .page .wrapper-bg.pos-5 .bg-img {
+        background-position: 59.5% 0; }
+        @media all and (min-width: 768px) {
+          .wrapper-contain .page .wrapper-bg.pos-5 .bg-img {
+            background-position: 62.5% 0; } }
+      .wrapper-contain .page .wrapper-bg.pos-6 .bg-img {
+        background-position: 68% 0; }
+        @media all and (min-width: 768px) {
+          .wrapper-contain .page .wrapper-bg.pos-6 .bg-img {
+            background-position: 75% 0; } }
+      .wrapper-contain .page .wrapper-bg.pos-7 .bg-img {
+        background-position: 80.5% 0; }
+        @media all and (min-width: 768px) {
+          .wrapper-contain .page .wrapper-bg.pos-7 .bg-img {
+            background-position: 87.5% 0; } }
+      .wrapper-contain .page .wrapper-bg.pos-8 .bg-img {
+        background-position: 100% 0; }
+      .wrapper-contain .page .wrapper-bg.pos-9 .bg-img {
+        background-position: 110% 0; }
+      .wrapper-contain .page .wrapper-bg .bg-img {
+        background-image: url(../assets/images/background.jpg);
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        transition: background 1s ease;
+        -webkit-transition: background 1s ease;
+        -moz-transition: background 1s ease;
+        -o-transition: background 1s ease; }
+      .wrapper-contain .page .wrapper-bg .btn-prev,
+      .wrapper-contain .page .wrapper-bg .btn-next {
+        font-size: 30px;
+        color: #7d7e7e;
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        z-index: 600; }
+        .wrapper-contain .page .wrapper-bg .btn-prev:hover,
+        .wrapper-contain .page .wrapper-bg .btn-next:hover {
+          color: #fff; }
+        @media all and (min-width: 768px) {
+          .wrapper-contain .page .wrapper-bg .btn-prev,
+          .wrapper-contain .page .wrapper-bg .btn-next {
+            font-size: 40px; } }
+      .wrapper-contain .page .wrapper-bg .btn-prev {
+        left: 50px; }
+      .wrapper-contain .page .wrapper-bg .btn-next {
+        right: 50px; }
+      .wrapper-contain .page .wrapper-bg .wrapper-indicators {
+        position: absolute;
+        bottom: 30px;
+        left: 30px; }
+        .wrapper-contain .page .wrapper-bg .wrapper-indicators .indicators {
+          list-style: none;
+          display: flex;
+          color: #fff;
+          border: 2px solid #fff;
+          border-style: dotted;
+          padding: 0;
+          margin: 0;
+          font-size: 10px; }
+          .wrapper-contain .page .wrapper-bg .wrapper-indicators .indicators .ind {
+            padding: 0 8px;
+            cursor: pointer;
+            border-left: 2px solid #fff;
+            border-left-style: dotted; }
+            .wrapper-contain .page .wrapper-bg .wrapper-indicators .indicators .ind:first-child, .wrapper-contain .page .wrapper-bg .wrapper-indicators .indicators .ind:last-child {
+              color: transparent; }
+            .wrapper-contain .page .wrapper-bg .wrapper-indicators .indicators .ind:first-child {
+              border: none; }
+      .wrapper-contain .page .wrapper-bg .active {
+        background-color: #fff; }
+    .wrapper-contain .page .logo {
+      width: 65px;
+      height: auto;
+      position: absolute;
+      bottom: 0;
+      right: 30px;
+      filter: invert(1); }
+      @media all and (min-width: 768px) {
+        .wrapper-contain .page .logo {
+          width: 100px; } }
+  .wrapper-contain #loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    background-image: url("../assets/images/monk.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .wrapper-contain .wrapper-text,
+  .wrapper-contain .parag-0 {
+    width: 270px;
+    padding: 40px;
+    text-align: center; }
+    .wrapper-contain .wrapper-text.parag-1, .wrapper-contain .wrapper-text.parag-2, .wrapper-contain .wrapper-text.parag-6, .wrapper-contain .wrapper-text.parag-7, .wrapper-contain .wrapper-text.parag-8, .wrapper-contain .wrapper-text.parag-3, .wrapper-contain .wrapper-text.parag-4, .wrapper-contain .wrapper-text.parag-5, .wrapper-contain .wrapper-text.parag-9,
+    .wrapper-contain .parag-0.parag-1,
+    .wrapper-contain .parag-0.parag-2,
+    .wrapper-contain .parag-0.parag-6,
+    .wrapper-contain .parag-0.parag-7,
+    .wrapper-contain .parag-0.parag-8,
+    .wrapper-contain .parag-0.parag-3,
+    .wrapper-contain .parag-0.parag-4,
+    .wrapper-contain .parag-0.parag-5,
+    .wrapper-contain .parag-0.parag-9 {
+      position: relative; }
+    @media all and (min-width: 768px) {
+      .wrapper-contain .wrapper-text,
+      .wrapper-contain .parag-0 {
+        width: 410px;
+        padding: 40px;
+        text-align: left; }
+        .wrapper-contain .wrapper-text.parag-1, .wrapper-contain .wrapper-text.parag-2, .wrapper-contain .wrapper-text.parag-6, .wrapper-contain .wrapper-text.parag-7, .wrapper-contain .wrapper-text.parag-8,
+        .wrapper-contain .parag-0.parag-1,
+        .wrapper-contain .parag-0.parag-2,
+        .wrapper-contain .parag-0.parag-6,
+        .wrapper-contain .parag-0.parag-7,
+        .wrapper-contain .parag-0.parag-8 {
+          position: absolute;
+          top: 40%;
+          left: 50px;
+          text-align: left; }
+        .wrapper-contain .wrapper-text.parag-3, .wrapper-contain .wrapper-text.parag-4, .wrapper-contain .wrapper-text.parag-5,
+        .wrapper-contain .parag-0.parag-3,
+        .wrapper-contain .parag-0.parag-4,
+        .wrapper-contain .parag-0.parag-5 {
+          text-align: end;
+          position: absolute;
+          top: 40%;
+          right: 50px;
+          text-align: right; }
+        .wrapper-contain .wrapper-text.parag-9,
+        .wrapper-contain .parag-0.parag-9 {
+          text-align: end;
+          position: absolute;
+          top: 0;
+          right: 0; } }
+    .wrapper-contain .wrapper-text .title,
+    .wrapper-contain .parag-0 .title {
+      margin: 0;
+      color: #fff;
+      font-weight: 100;
+      text-decoration: underline;
+      font-size: 20px;
+      display: none; }
+      .wrapper-contain .wrapper-text .title:first-child,
+      .wrapper-contain .parag-0 .title:first-child {
+        display: block; }
+      @media all and (min-width: 768px) {
+        .wrapper-contain .wrapper-text .title,
+        .wrapper-contain .parag-0 .title {
+          font-size: 35px; } }
+
+/*# sourceMappingURL=style.css.map */

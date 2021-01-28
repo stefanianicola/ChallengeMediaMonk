@@ -1,0 +1,232 @@
+@import "variables";
+@import "mixins";
+
+.wrapper-contain {
+    background-color: #000;
+    font-family: "klavika";
+    margin: 0;
+    .page {
+        display: none;
+        padding: 0;
+        .wrapper-bg {
+            height: 100vh;
+            width: 100%;
+            &.pos-1 {
+                .bg-img {
+                    background-position: 20.5% 0;
+                    @include respond-to(medium){
+                        background-position: 12.5% 0;
+                    }
+                }
+            }
+            &.pos-2 {
+                .bg-img {
+                    background-position: 27% 0;
+                    @include respond-to(medium){
+                        background-position: 25% 0;
+                    }
+                }
+            }
+            &.pos-3 {
+                .bg-img {
+                    background-position: 34.5% 0;
+                    @include respond-to(medium){
+                        background-position: 37.5% 0;
+                    }
+                }
+            }
+            &.pos-4 {
+                .bg-img {
+                    background-position: 48% 0;
+                    @include respond-to(medium){
+                        background-position: 50% 0;
+                    }
+                }
+            }
+            &.pos-5 {
+                .bg-img {
+                    background-position: 59.5% 0;
+                    @include respond-to(medium){
+                        background-position: 62.5% 0;
+                    }
+                }
+            }
+            &.pos-6 {
+                .bg-img {
+                    background-position: 68% 0;
+                    @include respond-to(medium){
+                        background-position: 75% 0;
+                    }
+                }
+            }
+            &.pos-7 {
+                .bg-img {
+                    background-position: 80.5% 0;
+                    @include respond-to(medium){
+                        background-position: 87.5% 0;
+                    }
+                }
+            }
+            &.pos-8 {
+                .bg-img {
+                    background-position: 100% 0;
+                }
+            }
+            &.pos-9 {
+                .bg-img {
+                    background-position: 110% 0;
+                }
+            }
+            .bg-img {
+                background-image: url(../assets/images/background.jpg);
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                transition: background 1s ease;
+                -webkit-transition: background 1s ease;
+                -moz-transition: background 1s ease;
+                -o-transition: background 1s ease;
+            }
+            .btn-prev,
+            .btn-next {
+                font-size: 30px;
+                color: #7d7e7e;
+                position: absolute;
+                top: 50%;
+                cursor: pointer;
+                z-index: 600;
+                &:hover {
+                    color: #fff;
+                }
+                @include respond-to(medium){
+                    font-size: 40px;
+                }
+            }
+            .btn-prev {
+                left: 50px;
+            }
+            .btn-next {
+                right: 50px;
+            }
+            .wrapper-indicators {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                .indicators {
+                    list-style: none;
+                    display: flex;
+                    color: #fff;
+                    border: 2px solid #fff;
+                    border-style: dotted;
+                    padding: 0;
+                    margin: 0;
+                    font-size: 10px;
+                    .ind {
+                        padding: 0 8px;
+                        cursor: pointer;
+                        border-left: 2px solid #fff;
+                        border-left-style: dotted;
+                        &:first-child,
+                        &:last-child {
+                            color: transparent;
+                        }
+                        &:first-child {
+                            border: none;
+                        }
+                    }
+                }
+            }
+            .active {
+                background-color: #fff;
+            }
+        }
+
+        .logo {
+            width: 65px;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+            filter: invert(1);
+            @include respond-to(medium){
+                width: 100px;
+            }
+        }
+    }
+    #loading {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        background-image: url("../assets/images/monk.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .wrapper-text,
+    .parag-0 {
+        width: 270px;
+        padding: 40px;
+        text-align: center;
+        &.parag-1,
+        &.parag-2,
+        &.parag-6,
+        &.parag-7,
+        &.parag-8, 
+        &.parag-3,
+        &.parag-4,
+        &.parag-5, 
+        &.parag-9 {
+            position: relative;
+        }
+        @include respond-to(medium) {
+            width: 410px;
+            padding: 40px;
+            text-align: left;
+            &.parag-1,
+            &.parag-2,
+            &.parag-6,
+            &.parag-7,
+            &.parag-8 {
+                position: absolute;
+                top: 40%;
+                left: 50px;
+                text-align: left;
+            }
+            &.parag-3,
+            &.parag-4,
+            &.parag-5 {
+                text-align: end;
+                position: absolute;
+                top: 40%;
+                right: 50px;
+                text-align: right;
+            }
+            &.parag-9 {
+                text-align: end;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        .title {
+            margin: 0;
+            color: #fff;
+            font-weight: 100;
+            text-decoration: underline;
+            font-size: 20px;
+            display: none;
+            &:first-child {
+                display: block;
+            }
+            @include respond-to(medium) {
+                font-size: 35px;
+            }
+        }
+    }
+}
